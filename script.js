@@ -8,6 +8,41 @@ var wind2=document.getElementById("wind2");
 var hum2=document.getElementById("hum2");
 var sky=document.getElementById("sky");
 console.log("hello");
+setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let day=time.toString();
+            let curDate = day.substring(0,16);
+            let hour = time.getHours();
+            let min = time.getMinutes();
+           
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            
+  
+            let currentTime = hour + ":" 
+                + min + " "+ am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+                document.getElementById("datee")
+                .innerHTML = curDate;
+
+        }
+  
+        showTime();
+    
 // if(button){
 button1.addEventListener('click',function(){
     const city = inputEl.value;
