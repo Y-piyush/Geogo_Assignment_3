@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Weatherio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
+    
+</head>
+<body>
+    <div class="navbar">
+        <div id="home" class="active"><i class="fas fa-home"></i></div>
+        <div><i class="fas fa-map-marker-alt"></i></div>
+        <div><i class="fas fa-chart-bar"></i></div>
+        <div><i class="far fa-calendar-alt"></i></div>
+        <div><i class="fas fa-cog"></i></div>
+    </div>
+    <div class="page">
+    <div class="first">
+            <h1 ><span>10:01 AM</span><div class="hide"><i class="fas fa-sliders-h"></i></div><div class="daytime"><div class="active"><i class="far fa-sun"></i></div><div><i class="far fa-moon"></i></div></div></h1>
+            <h3 id="date">Wednesday,5 December 2021 </h3>
+            <h2 ><p><img src="images/sun1.png"</p> Welcome back,Piyush!</h2>
+          
+             
+            <div class="weekdays">
+                <div>
+                    <img src="images/icons/moon.png" width="75%" height="50%">
+                    <p>Mon
+                    <br>28&deg;C</p>
+                </div>
+                <div>
+                    <img src="images/icons/cloudy.png" width="75%" height="50%">
+                    <p>Tue
+                    <br>25&deg;C</p>
+                </div>
+                <div class="active">
+                    <img src="images/icons/rainy.png" width="75%" height="50%">
+                    <p>Wed
+                    <br>20&deg;C</p>
+                </div>
+                <div>
+                    <img src="images/icons/snowing.png" width="75%" height="50%">
+                    <p>thur
+                    <br>5&deg;C</p>
+                </div>
+                <div>
+                    <img src="images/icons/storm.png" width="75%" height="50%">
+                    <p>Fri
+                    <br>18&deg;C</p>
+                </div>
+                <div>
+                    <img src="images/icons/sunny.png" width="75%" height="50%">
+                    <p>Sat
+                    <br>35&deg;C</p>
+                </div>
+                <div>
+                    <img src="images/icons/windy.png" width="75%" height="50%">
+                    <p>Sun
+                    <br>30&deg;C</p>
+                </div>
+            </div>
+            
+               
+                
+            <div class="more">
+                
+                   <div class="aqi" >
+                       <header>Air Quality Index</header>
+                       <div id="good" class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/windy.png" width="50px" height="50px"></div>
+                            <div class="p-2 flex-grow-1 bd-highlight"><span>Good</span>
+                            <br>A good day for a walk!<br></div>
+                            <div class="p-2 bd-highlight"><button>Refresh</button></div>
+                        </div>
+                        <div class="container2">
+                            <div><p>O<sub>2</sub><br>7</p></div>
+                            <div><p>SO<sub>2</sub><br>4.8</p></div>
+                            <div><p>CO<br>0.9</p></div>
+                            <div><p>NO<sub>2</sub><br>4.6</p></div>
+                        </div>
+                   </div>
+                  
+                   <div class="suninfo">
+                         <div id="suninfo_head"><header>Sunset & Sunrise</header><p><i class="fas fa-plus-circle"></i></p></div>
+                         <div>
+                             <p>Allahabad</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th id="sunrise" scope="col-1"><i class="fas fa-sun"></i></th>
+                                    <th scope="col-3"><p>Sunrise<br>6:05 AM</p></th>
+                                    <th  id="sunset" scope="col-sm-1"><i class="fas fa-moon"></i></th>
+                                    <th scope="col-3"><p>Sunset<br>6:15 PM</p></th>
+                                </tr>
+                                </thead>
+                            </table>
+                         </div>
+                         <div>
+                            <p>Delhi</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th id="sunrise" scope="col-1"><i class="fas fa-sun"></i></th>
+                                    <th scope="col-3"><p>Sunrise<br>6:05 AM</p></th>
+                                    <th  id="sunset" scope="col-sm-1"><i class="fas fa-moon"></i></th>
+                                    <th scope="col-3"><p>Sunset<br>6:15 PM</p></th>
+                                </tr>
+                                </thead>
+                            </table>
+                            
+                         </div>
+                   </div>
+            
+            </div>
+    </div>
+    <div class="second">
+         <div class="top">
+            <div class="search"> 
+                <div class="search_input"><input id="input" type="text" placeholder="Search City..."> </div>
+                <div class="search_icon"><button id="piyush" value="sub"><i class="fas fa-search-location"></i></button></div>
+                
+            </div>
+            <div class="account">
+                <i class="far fa-bell"></i>
+                <img src="images/shin.jpg" width="45%" height="90%">
+            </div>
+            </div>
+            <div class="city">
+                <header><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i><span id="city_name">Allahabad</span></header>
+                    <img src="images/icons/sunny.png" width="150px" height="150px">
+                   <p>Today<br><span id="temp">29</span><span>&deg;C</span><br>
+                   <span id="sky">Sunny</span></p>
+                   <p><i class="fas fa-wind"></i>Wind&nbsp;&nbsp;|&nbsp;&nbsp;<span id="wind2">19</span>kmph<br>
+                    <i class="fas fa-tint"></i>&nbsp;&nbsp;Hum&nbsp;&nbsp;|&nbsp;&nbsp;<span id="hum2">22</span>%&nbsp;&nbsp;
+                </p>
+               
+
+            </div>
+            <div class="moreinfo">
+                            <div class="info_table">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td scope="col-1"> <i class="fas fa-wind"></i></td>
+                                    <td scope="col-3" >Wind</td>
+                                    <td scope="col-1">|</td>
+                                    <td scope="col-3"><span id="wind">15</span>km/h</td>
+                                </tr>
+                                <tr>
+                                    <td scope="col-1"><i class="fas fa-tint"></i></td>
+                                    <td scope="col-3" >Hum</td>
+                                    <td scope="col-1">|</td>
+                                    <td scope="col-3"><span id="hum">20</span>%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                          <div class="cityname_infotable">
+                                <p><i class="fas fa-map-marker-alt"></i>&nbsp;Delhi</p><span2>28&deg;C</span2>
+                            </div>
+            </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"> -->
+    <!-- </script> -->
+</body>
+</html>

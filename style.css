@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap');
+
+body{
+    font-family: 'Baloo 2', cursive;
+   width: 100%;
+   height: 100%;
+    background-color: #ffffff;
+   margin:0;
+}
+h1{
+ display: block;
+    color: rgb(40, 159, 214);
+    margin-top: 1%; 
+    font-size: 3em;
+}
+h1,h3,h2{
+   
+    margin-left:2%;
+
+}
+h2{
+    color: rgb(40, 159, 214);
+   font-size: 2.5em; 
+}
+
+h3{
+    font-size: 1.4em;;
+}
+p{
+    margin-bottom: 0;
+}
+.hide{
+    width:40px;
+    height: 35px;
+    margin-right:5px;
+    color: rgb(122, 119, 119);
+    float: right;
+    text-align: center;
+   align-items: center;
+    font-size: 1.5rem;
+    border: 3px solid rgb(122, 119, 119);
+    border-radius: 5px;
+    vertical-align: middle;
+    padding:5px;
+    visibility: hidden;
+}
+
+
+.daytime{
+    float:right;
+   
+  margin:auto;
+   height:35px;
+    font-size: 22px;
+   margin-right: 10px;
+    width:70px;
+    
+    border-radius: 30px;
+   background-color: white;
+   vertical-align: middle;
+   
+}
+.daytime div{
+    width:25px;
+    border-radius: 25px;
+    margin: 5px;
+    
+    text-align: center;
+    
+    display: inline-block;
+    
+}
+.daytime div:hover{
+    background-color: rgb(176, 193, 248);
+    color: white;
+    transform: translateY(1px);
+}
+.daytime .active{
+    background-color: rgb(122, 151, 245);
+    color: white;
+}
+.navbar{
+    width: 50px;
+   
+   border-radius: 0 10px 10px 0;
+   background-color: black;
+
+    position:fixed;
+    top:30%;
+    
+    display:flex;
+      
+}
+.navbar div{
+   width: 100%;
+   padding:3px;
+   border-radius: 0 5px 5px 0;
+   font-size: 25px;
+   text-align: center;
+   color:white;
+}
+.navbar div:hover{
+    background-color: rgb(247, 10, 247);
+    transform: translateY(3px);
+}
+.navbar .active{
+    background-color: rgb(247, 10, 247);
+}
+.page{
+    display: flex;
+}
+
+.first{
+    
+    flex-shrink: inherit;
+   width:100%;
+    
+    
+    background-color:rgb(163 223 244 / 31%);
+   
+    
+}
+.second .city,.search,.moreinfo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.weekdays{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    justify-content:space-evenly;
+    
+   
+}
+.weekdays div{
+     border-radius: 10%;
+     width:100px;
+     height:120px;
+     margin:10px;
+     cursor: pointer;
+     background-color:white;
+     text-align: center;
+     padding:5px;
+     
+}
+.weekdays div:hover{
+    background-color:rgb(108, 133, 247);
+    color: white;
+}
+.weekdays .active{
+    background-color:rgb(34, 62, 190);
+    color: white;
+}
+img{
+    margin-bottom: 5px;
+    
+}
+.first .more{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.aqi,.suninfo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    padding: 1%;
+    border-radius: 10px;
+}
+.aqi div{
+    display: inline-block;
+    
+
+}
+.aqi{
+    width:350px;
+    height:300px;
+    
+    background-color: white;
+    margin: 4% 2%;
+    padding:5px;
+    background-color: rgb(232, 248, 200);
+    
+
+}
+header{
+    padding-left:2%;
+    font-size: 1.2em;
+    
+    font-weight: bold;
+}
+.aqi div{
+    padding:2%;
+    display: inline-block;
+    padding:5px;
+    height:30%;
+    
+   
+}
+#good{
+    
+    background-color: rgb(177, 241, 161);
+    
+    border-radius: 10px;
+}
+#good div{
+    vertical-align: middle;
+}
+.aqi span{
+    font-weight: bold;
+    font-size: 1.2em;
+    color:green;
+   
+}
+.aqi div button{
+   text-align: center;
+   font-weight: bold;
+   background-color: rgb(155, 192, 226);
+   color: rgb(46, 111, 209);
+   cursor: pointer;
+   outline: none;
+   
+  
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 6px #999;
+ }
+ 
+ .aqi div button:hover {
+     background-color: rgb(116, 116, 221);
+    color: white;
+    
+
+}
+ 
+ button:active {
+    background-color: rgb(116, 116, 221);
+    color: white;
+   box-shadow: 0 3px #666;
+   transform: translateY(4px);
+ }
+ .aqi .container2{
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content:space-evenly;
+     height:40%;
+     
+ }
+ .container2 div{
+     width:20%;
+     height:80%;
+     background-color: rgb(177, 241, 161);
+     text-align: center;
+     margin:5px;
+     padding:5%;
+     cursor: pointer;
+     color: green;
+     font-weight: bold;
+     border-radius: 10px;
+    
+ }
+ .container2 div:hover{
+     color:white;
+     background-color: rgb(45, 207, 45);
+ }
+.suninfo{
+    width:350px;
+    height:300px;
+    margin: 4% 2%;
+    padding:3px;
+    background-color: white;
+   
+}
+#suninfo_head header{
+    width:90%;
+    display: inline-block;
+}
+#suninfo_head p{
+    
+    right: inherit;
+    font-size:1.3em;
+    color:rgb(235, 152, 45);  
+    display: inline-block;
+} 
+#suninfo_head p:hover{
+  transform: translateY(1px);
+}
+#suninfo_head p:active{
+    transform: translateY(4px);
+}
+.suninfo p{
+    margin:0;
+    font-weight:bold;
+    padding:1%;
+}
+.suninfo div{
+    margin:2%;
+    width:95%;
+   
+    background-color: rgb(252, 237, 217);
+    border-radius: 10px;
+}
+.suninfo .table{
+    width:100%;
+    color:rgb(235, 152, 45);  
+}
+
+#sunset,#sunrise{
+ vertical-align: middle;
+ text-align: center;
+    font-size: 2em;
+}
+
+
+.second{
+   
+    
+  width:370px;
+    height:100vh;
+   margin:30px;
+    
+}
+.top{
+    
+    width: 100%;
+    height: 40px;
+    
+    
+    padding:2px;
+   
+}
+.search {
+   width:200px;
+    height: 100%;
+    background-color: rgb(163 223 244 / 31%);
+    border-radius: 20px;
+    vertical-align: middle;
+    padding: 8px;
+  
+    display: inline-block;
+    
+}
+@media only screen and (max-width:720px) {
+    .second{
+        display: none;
+    }
+    .hide{
+        visibility: visible;
+        justify-content: center;
+    }
+    
+}
+.search_input{
+ width: 150px;
+ height:20px;
+ display: inline-block;
+}
+#input {
+    
+   width:150px;
+   height:20px;
+    
+    border: 0;
+    outline: 0;
+    background: none;
+   
+    caret-color: black;
+   
+    vertical-align: middle;
+    transition: width 0.4s linear;
+    
+}
+
+.search_icon{
+    
+    display: inline-block;
+   vertical-align: middle;
+    right: inherit;
+    cursor: pointer;
+}
+.search_icon button{
+    border: 0;
+    outline: 0;
+    background: none;
+}
+.search_icon:hover{
+    transform: translateY(3px);
+}
+
+.account{
+ 
+ float: right;
+ width:70px;
+ height:100%;
+ 
+
+ 
+}
+.account svg{
+    margin-right:5px;
+    font-size: 1.5em;
+   vertical-align: middle;
+     cursor: pointer;
+}
+.account svg:hover{
+    transform: translateY(3px);
+}
+.account img{
+    border-radius: 10px;
+    border: 2px solid rgb(0, 204, 255);
+    width:40px;
+    cursor: pointer;
+    height: 40px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.account img:hover{
+    transform: translateY(3px);
+}
+.city{
+    text-align: center;
+  
+    font-size: 1.2em;
+ margin: auto;
+ margin-top: 15%;
+     padding:5%;
+     width:300px;
+     height:400px;
+     color:white;
+     border-radius: 5%;
+     background-color: rgb(66 127 218 / 52%);
+ }
+
+.city:hover{
+    transform: translateY(5px);
+}
+ .city header{
+     text-align: center;
+ }
+ #temp{
+     font-size: 2.5em;
+ }
+ .moreinfo{
+     width:300px;
+     
+     box-shadow:-5px -5px 0 0 rgb(228, 181, 247);
+     border-radius: 15px;
+     height:100px;
+     margin:auto;
+     margin-top: 10%;
+     background-color: rgb(210, 121, 245);
+ }
+ .moreinfo:hover{
+    transform: translateY(5px);
+    box-shadow:-8px -8px 0 0 rgb(228, 181, 247);
+}
+.moreinfo div{ 
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    margin:2% 1%;
+    padding:2%;
+    vertical-align: middle;
+}
+.moreinfo .info_table{
+    width:70%;
+    height:100%;
+   
+    text-decoration: transparent;
+    
+    
+}
+.moreinfo .cityname_infotable{
+    width:25%;
+    
+    text-align: right;
+    
+    
+}
+.moreinfo td{
+    color: white;
+    border-style: none;
+}
+.moreinfo span2{
+    font-size:1.3em;
+}
