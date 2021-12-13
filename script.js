@@ -11,8 +11,12 @@ console.log("hello");
 setInterval(showTime, 1000);
         function showTime() {
             let time = new Date();
-            let day=time.toString();
-            let curDate = day.substring(0,16);
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
+let day = days[time.getDay()];
+            let date=time.toString();
+            let curDate = day+", "+date.substring(4,16);
             let hour = time.getHours();
             let min = time.getMinutes();
            

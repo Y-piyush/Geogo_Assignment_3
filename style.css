@@ -356,6 +356,7 @@ header{
 .search_input{
  width: 150px;
  height:20px;
+ vertical-align: middle;
  display: inline-block;
 }
 #input {
